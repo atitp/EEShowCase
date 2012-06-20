@@ -1,10 +1,11 @@
 <%-- 
-    Document   : index
-    Created on : Jun 20, 2012, 10:23:27 AM
+    Document   : PersonInfo
+    Created on : Jun 20, 2012, 10:37:27 AM
     Author     : atitp
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<jsp:useBean id="person" class="com.patumvan.atit.PersonBean" scope="session"/>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,9 +13,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1> Java Bean</h1>
-        <ul>
-            <li><A href="EditPerson.jsp">EditPerson.jsp</A></li>
-        </ul>
+        <h1>Hello World! <%= person.getName() %></h1>
     </body>
 </html>
